@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulos animados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="center">
+              <div class="contenedor">
+                <div class="area-superior">
+                    <div class="superior-item" id="fechasSemana">
+                        <span class="bspan">WEEKLY REPORT</span>
+                    </div>
+                    <div class="superior-item">
+                        <span class="fecha-mostrada right">Revenue</span>
+                        <span class="bspan right">$ 3621.79</span>
+                    </div>
+                </div>
+                <div class="area-inferior">
+                    <div class="inferior-item text-line">
+                        <div class="rojo"></div>
+                        <div class="text">Views</div>
+                        <div class="azul"></div>
+                        <div class="text">Purchases</div>
+                    </div>
+                    <div class="inferior-item grafica1">
+                        <svg width="100%" height="45">
+                            <polyline points="9,40 50,8 90,28 130,1 171,40 211,44 251,2" fill="none" stroke="red" stroke-width="2px"></polyline>
+                        </svg>
+                        <div class="puntos">
+                            <div class="punto1 puntos-marcados">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto2 puntos-marcados">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto3 puntos-marcados">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto4 puntos-marcados">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto5 puntos-marcados">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto6 puntos-marcados">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto7 puntos-marcados">
+                                <div class="punto_text">$99</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="inferior-item grafica1">
+                        <svg>
+                            <polyline points="9,28 50,22 90,35 130,30 171,32 211,40 251,28" fill="none" stroke="blue" stroke-width="2px"></polyline>
+                        </svg>
+                        <div class="puntos">
+                            <div class="punto1b puntos-marcadosb">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto2b puntos-marcadosb">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto3b puntos-marcadosb">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto4b puntos-marcadosb">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto5b puntos-marcadosb">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto6b puntos-marcadosb">
+                                <div class="punto_text">$99</div>
+                            </div>
+                            <div class="punto7b puntos-marcadosb">
+                                <div class="punto_text">$99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inferior-item semana-felx">
+                        <span class="dias-semana">Lun</span>
+                        <span class="dias-semana">Mar</span>
+                        <span class="dias-semana">Mie</span>
+                        <span class="dias-semana">Jue</span>
+                        <span class="dias-semana">Vie</span>
+                        <span class="dias-semana">Sab</span>
+                        <span class="dias-semana">Dom</span>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>   
+    <script src="semana.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+html{
+  font-family: "century gothic", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  overflow: hidden;
+  background: #3ac7c7;
+  border-radius: 5px;
+}
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor{
+  box-shadow: 10px 10px 20px 2px #55555580;
+}
+
+.area-superior{
+  width: 280px;
+  height: 70px;
+  background-color: #ffc04b;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.right{
+  text-align: right;
+}
+
+.area-inferior{
+  width: 280px;
+  height: 180px;
+  background-color: #f0f0f1;
+  border-radius: 0 0 3px 3px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.superior-item{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: "century gothic", sans-serif;
+}
+
+.bspan{
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.fecha-mostrada{
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.inferior-item{
+  flex-grow: 1;
+  padding: 3px 8px;
+  position: relative;
+}
+
+.text-line{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rojo{
+  width: 15px;
+  height: 3px;
+  background-color: red;
+}
+
+.text{
+  font-size: 0.7rem;
+  color: #888888;
+  margin-left: 10px;
+}
+
+.azul{
+  width: 15px;
+  height: 3px;
+  background-color: blue;
+  margin-left: 20px;
+}
+
+.grafica1{
+  height: 45px;
+  position: relative;
+}
+
+svg{
+  position: absolute;
+}
+
+.semana-felx{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dias-semana{
+  font-size: 0.8rem;
+  color: #888888;
+}
+
+.puntos{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.puntos-marcados{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.punto1{
+  top: 36px;
+  left: 5px;
+}
+
+.punto2{
+  top: 4px;
+  left: 46px;
+}
+
+.punto3{
+  top: 24px;
+  left: 86px;
+}
+
+.punto4{
+  top: -3px;
+  left: 126px;
+}
+
+.punto5{
+  top: 36px;
+  left: 167px;
+}
+
+.punto6{
+  top: 40px;
+  left: 207px;
+}
+
+.punto7{
+  top: -2px;
+  left: 247px;
+}
+
+.puntos-marcadosb{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: blue;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.punto1b{
+  top: 24px;
+  left: 5px;
+}
+
+.punto2b{
+  top: 18px;
+  left: 46px;
+}
+
+.punto3b{
+  top: 31px;
+  left: 86px;
+}
+
+.punto4b{
+  top: 26px;
+  left: 126px;
+}
+
+.punto5b{
+  top: 28px;
+  left: 167px;
+}
+
+.punto6b{
+  top: 36px;
+  left: 207px;
+}
+
+.punto7b{
+  top: 24px;
+  left: 247px;
+}
+
+.punto_text{
+  font-size: 0.7rem;
+  text-align: center;
+  font-weight: 500;
+  background-color: #c0c0c0;
+  padding: 3px;
+  border-radius: 2px;
+  height: max-content;
+  transition: 0.4s;
+  opacity: 0;
+}
+
+.punto_text::after{
+	content: '';
+  position: absolute;
+  background-color: #c0c0c0;
+	height: 6px;
+	width: 6px;
+	left: 50%;
+	margin-left: -3px;
+	bottom: -3px;
+	transform: rotate(45deg);
+}
+
+.puntos-marcados:hover .punto_text{
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+.puntos-marcadosb:hover .punto_text{
+  opacity: 1;
+  transform: translateY(-30px);
+}
